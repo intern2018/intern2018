@@ -14,7 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 Route::get('/other-page', function () {
     return view('welcome');
 });
 Route::get('/', 'HomeController@home');
+=======
+>>>>>>> 9c97e54a3bfec37d055ad466485e81e156f5bab1
