@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
+            <a class="navbar-brand" href="{{ url('#') }}">
                 {{"BLOG"}}
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -14,9 +14,9 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
 
-                        <a class="nav-link" href="/posts">Show Blogs</a>
-                        <a class="nav-link" href="/posts/create">Create post</a>
-                        <a class="nav-link" href="/about">About</a>
+                        <a class="nav-link" href="#">Show Blogs</a>
+                        <a class="nav-link" href="#>Create post</a>
+                        <a class="nav-link" href="#>About</a>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -36,5 +36,3 @@
             </div>
         </div>
     </nav>
-
-
