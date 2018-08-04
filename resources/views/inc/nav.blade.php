@@ -16,7 +16,7 @@
 
                         <a class="nav-link" href="#">Show Blogs</a>
                         <a class="nav-link" href="#>Create post</a>
-                        <a class="nav-link" href="#>About</a>
+                        <a  class="nav-link" href="#>About</a>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
