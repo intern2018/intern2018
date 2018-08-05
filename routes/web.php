@@ -14,14 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
-<<<<<<< HEAD
+
 Route::get('/issued', 'issuedController@index');
-=======
-<<<<<<< HEAD
+
 Route::get('/other-page', function () {
     return view('welcome');
 });
 Route::get('/', 'HomeController@home');
-=======
->>>>>>> 9c97e54a3bfec37d055ad466485e81e156f5bab1
->>>>>>> d840a8fa1e2844a55fcdbaa27098977640621f7c
+
