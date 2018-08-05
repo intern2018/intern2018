@@ -1,7 +1,6 @@
 @extends('inc.layouts')
-
-
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+@include('includes.sidebar')
+<nav class="navbar navbar-expand-md navbar-dark bg-light">
         <div class="container">
             <a class="navbar-brand" href="{{ url('#') }}">
                 {{"BLOG"}}

@@ -12,23 +12,79 @@
     
   </head>
   <body>
-        <div class="row">
+        <div class="wrapper">
           @include('includes.sidebar')
-          <div class="container">
-            <div class="row">
-            <div class="col-4 offset-2 mt-5 pt-5">
-                <div class="card mt-5">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">እቃ</h5>
-        
+            <div class="container">
+              <div class="row">
+                <div class="col-7 offset-2 mt-4 pt-4">
+                  <div class="card mt-4">
+                    <div class="card-body text-left">
+                      <h5 class="card-header">እቃ</h5>
+                      <div class="card-body">
+
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">የእቃው ወይም የንብረቱ አይነት ዝርዝር</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Detailed Description of Articles or property" id="detailed" name="detailed">
+                        </div>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">ሞዴል</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Model" id="model" name="model">
+                        </div>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">ሴሪ</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Serie" id="serie" name="serie">
+                        </div>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">ያንዱ ዋጋ</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Unit Price" id="unit_price" name="unit_price">
+                        </div>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">ብዛት</span>
+                          </div>
+                          <input type="text" class="form-control" placeholder="Quantity" id="quantity" name="quantity">
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-3 mt-4 pt-4">
+                  <div class="card mt-4">
+                      <div class="card-body text-left">
+                        <h5 class="card-header">ተከታታይ</h5>
+                        <div class="card-body">
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">ከ</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="From" id="from" name="from">
+                          </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">እስከ</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="To" id="to" name="to">
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
+              </div>
+
             </div>
-            </div>
-          </div>
         </div>
               
-        <img src="a.png"  alt="HTML5 Icon" style="width:128px;height:128px;"></img>
+        
         
     
 
