@@ -22,3 +22,6 @@ Route::get('/other-page', function () {
 });
 Route::get('/', 'HomeController@home');
 
+Route::get('/form', function () {
+    return view('form');
+});
