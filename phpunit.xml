@@ -9,6 +9,7 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
+<<<<<<< HEAD
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests/Unit</directory>
         </testsuite>
@@ -16,6 +17,15 @@
         <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
+=======
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+>>>>>>> 4b22037817cbf6c93946ecbb8fefe4713fcaf0cc
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">

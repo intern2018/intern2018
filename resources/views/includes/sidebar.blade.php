@@ -1,33 +1,16 @@
-<aside class="main-sidebar">
-        <!-- sidebar: style can be found in sidebar.less -->
-        <section class="sidebar">
-          <ul class="sidebar-menu">
+
+<div id="sidebar">
+        <ul class="sidebar-nav bg-dark col-1">
             <li class="sidebar-brand">
-                <a href="#">
-                    inventory
+                <a href="/">
+                    <img src="{{asset('image/a.jpg')}}"  alt="HTML5 Icon" style="width:64px;height:64px;"></img>
                 </a>
             </li>
             <li>
-                <a href="#">Dashboard</a>
+                <a href="issued">Issued</a>
             </li>
             <li>
-                <a href="#">Shortcuts</a>
-            </li>
-            <li>
-                <a href="#">Overview</a>
-            </li>
-            <li>
-                <a href="#">Events</a>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#">Services</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
+                <a href="form">Form</a>
             </li>
         </ul>
     </div>
-</div>
