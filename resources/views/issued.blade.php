@@ -16,68 +16,71 @@
           @include('includes.sidebar')
             <div class="container">
               <div class="row">
-                <div class="col-7 offset-2 mt-4 pt-4">
-                  <div class="card mt-4">
-                    <div class="card-body text-left">
-                      <h5 class="card-header">እቃ</h5>
-                      <div class="card-body">
-
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">የእቃው ወይም የንብረቱ አይነት ዝርዝር</span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Detailed Description of Articles or property" id="detailed" name="detailed">
-                        </div>
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">ሞዴል</span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Model" id="model" name="model">
-                        </div>
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">ሴሪ</span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Serie" id="serie" name="serie">
-                        </div>
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">ያንዱ ዋጋ</span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Unit Price" id="unit_price" name="unit_price">
-                        </div>
-                        <div class="input-group mb-3">
-                          <div class="input-group-prepend">
-                            <span class="input-group-text">ብዛት</span>
-                          </div>
-                          <input type="text" class="form-control" placeholder="Quantity" id="quantity" name="quantity">
-                        </div>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-3 mt-4 pt-4">
-                  <div class="card mt-4">
+                <div class="col-10 offset-2 mt-3">
+                  <div class="card">
+                    
+                      
                       <div class="card-body text-left">
-                        <h5 class="card-header">ተከታታይ</h5>
+                        <h5 class="card-header">የእቃ ወይም የንብረት ወጪ ደረሰኝ</h5>
                         <div class="card-body">
-                          <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">ከ</span>
+                          <form action="#">
+                          <div class="row">
+                          
+                            <div class="col-9">
+                              <div class="form-group">
+                                <label for="property">የእቃው ወይም የንብረቱ አይነት ዝርዝር :</label>
+                                <input type="text" class="form-control" placeholder="Detailed Description of Articles or property" id="detailed" name="detailed">
+                              </div>
+                            
+                              <div class="form-group">
+                                  <label for="model">ሞዴል :</label>
+                                  <input type="text" class="form-control" placeholder="Model" id="model" name="model">
+                              </div>
+                            
+                              <div class="form-group">
+                                <label for="serie">ሴሪ :</label>
+                                <input type="text" class="form-control" placeholder="Serie" id="serie" name="serie">
+                              </div>
+                             
+                              <div class="form-group">
+                                <label for="unit price">ያንዱ ዋጋ :</span>
+                                <input type="number" class="form-control" placeholder="Unit Price" id="unit_price" name="unit_price">
+                              </div>
+                              
+                              <div class="form-group">
+                                <label for="quantity">ብዛት :</span>
+                                <input type="number" class="form-control" placeholder="Quantity" id="quantity" name="quantity">
+                              </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="From" id="from" name="from">
-                          </div>
-                          <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <span class="input-group-text">እስከ</span>
+                            
+                            <div class="col-3">
+                              <label for="text">ተከታታይ</span>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">ከ</span>
+                                </div>
+                                <input type="date" class="form-control" placeholder="From" id="from" name="from">
+                              </div>
+                              <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">እስከ</span>
+                                </div>
+                                <input type="date" class="form-control" placeholder="To" id="to" name="to">
+                              </div>
                             </div>
-                            <input type="text" class="form-control" placeholder="To" id="to" name="to">
                           </div>
-                        </div>
+
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
+
                       </div>
                     </div>
+                    
+                      
+                      
+                           
+                        
+                  </div>
                 </div>
               </div>
 

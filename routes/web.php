@@ -25,3 +25,11 @@ Route::get('/', 'HomeController@home');
 Route::get('/form', function () {
     return view('form');
 });
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/user', function () {
+    return view('userscontrollcard');
+});

@@ -1,7 +1,9 @@
 @extends('welcome')
 
 @section('content')
-
-<h1>Hello world</h1>
-
+    <body>
+        <div class="container">
+            <h1>Hello this is InventorySystem home page.</h1>
+        </div>
+    </body>
 @endsection
