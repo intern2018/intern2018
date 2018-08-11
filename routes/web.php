@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
+<<<<<<< HEAD
     return view('auth.login');
 });
 
@@ -32,3 +33,26 @@ Route::get('/userscontrollcard', function () {
     return view('userscontrollcard');
 });
 
+=======
+    return view('welcome');
+});
+
+Route::get('/issued', 'issuedController@index');
+
+Route::get('/other-page', function () {
+    return view('welcome');
+});
+Route::get('/', 'HomeController@home');
+
+Route::get('/form', function () {
+    return view('form');
+});
+
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/user', function () {
+    return view('userscontrollcard');
+});
+>>>>>>> 2c14e739fb7ae1190eced564acf95a69900aea8d

@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/node_modules
+>>>>>>> 2c14e739fb7ae1190eced564acf95a69900aea8d
 /public/hot
 /public/storage
 /storage/*.key

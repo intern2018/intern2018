@@ -14,8 +14,11 @@ try {
     require('bootstrap');
 } catch (e) {}
 
+<<<<<<< HEAD
 require('admin-lte');
 
+=======
+>>>>>>> 2c14e739fb7ae1190eced564acf95a69900aea8d
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
  * to our Laravel back-end. This library automatically handles sending the

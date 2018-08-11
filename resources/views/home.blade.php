@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layouts.master')
 @section('content')
 <div class="container">
@@ -20,3 +21,14 @@
     </div>
 </div>
 @endsection
+=======
+@extends('welcome')
+
+@section('content')
+    <body>
+        <div class="container">
+            <h1>Hello this is InventorySystem home page.</h1>
+        </div>
+    </body>
+@endsection
+>>>>>>> 2c14e739fb7ae1190eced564acf95a69900aea8d

@@ -9,6 +9,13 @@
          processIsolation="false"
          stopOnFailure="false">
     <testsuites>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> forpull
+>>>>>>> 2c14e739fb7ae1190eced564acf95a69900aea8d
         <testsuite name="Unit">
             <directory suffix="Test.php">./tests/Unit</directory>
         </testsuite>
@@ -16,6 +23,24 @@
         <testsuite name="Feature">
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> forpull
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+<<<<<<< HEAD
+=======
+>>>>>>> 4b22037817cbf6c93946ecbb8fefe4713fcaf0cc
+>>>>>>> forpull
+>>>>>>> 2c14e739fb7ae1190eced564acf95a69900aea8d
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">

@@ -15,6 +15,10 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \App\Http\Middleware\CheckForMaintenanceMode::class,
+<<<<<<< HEAD
+=======
+        \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+>>>>>>> 2c14e739fb7ae1190eced564acf95a69900aea8d
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
