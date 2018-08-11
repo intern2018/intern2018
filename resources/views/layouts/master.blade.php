@@ -118,12 +118,12 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li class="active"><a href="{{ url('userscontrollcard') }}"><i class="fa fa-circle-o"></i>User Card</a></li>
+            <li><a href="{{ url('issued') }}"><i class="fa fa-circle-o"></i>Issued Resource</a></li>
           </ul>
         </li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
+        <li class="active"><a href="{{ url('form') }}"><i class="fa fa-link"></i> <span>Insert Product</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>

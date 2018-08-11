@@ -18,3 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/issued', 'issuedController@index');
+Route::get('/other-page', function () {
+    return view('welcome');
+});
+Route::get('/form', function () {
+    return view('form');
+});
+Route::get('/test', function () {
+    return view('test');
+});
+Route::get('/userscontrollcard', function () {
+    return view('userscontrollcard');
+});
+
