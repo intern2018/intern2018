@@ -118,7 +118,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="{{ url('userscontrollcard') }}"><i class="fa fa-circle-o"></i>User Card</a></li>
+            <li><a href="{{ url('userscontrollcard') }}"><i class="fa fa-circle-o"></i>User Card</a></li>
             <li><a href="{{ url('issued') }}"><i class="fa fa-circle-o"></i>Issued Resource</a></li>
           </ul>
         </li>
