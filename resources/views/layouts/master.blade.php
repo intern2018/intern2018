@@ -14,7 +14,7 @@
 
 <body class="hold-transition sidebar-mini skin-black-light">
 
- <div class="wrapper">
+ <div class="wrapper" id="app">
   <!-- Main Header -->
      <header class="main-header" >
     <!-- Logo -->
@@ -25,20 +25,27 @@
       <span class="logo-lg"><img style="height: 80px; width: 100%;" src="{{ asset('images/adm.png')}}"></span>
       </a>
     <nav class="navbar navbar-static-top">
-     
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
         <span class="sr-only">Toggle navigation</span>
       </a>
-       <div class="navbar-custom-menu" style="display: inline-block;">
+       <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
-              <li class="dropdown user user-menu"><br>
+              <li class="dropdown user user-menu">
                 <p class="dropdown-toggle" data-toggle="dropdown">
                   <img height="160px" width="160px" class="user-image" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small">
+                     @if(Auth::user())
                      <span class="hidden-xs">
                       <small>
-                            Welcome User
+                      {{ Auth::user()->name }}
                         </small>
                      </span>
+                     @else
+                     <span class="hidden-xs">
+                      <small>
+                      Welcome User
+                        </small>
+                     </span>
+                     @endif
                 </p>
               </li>
               <li class="dropdown user user-menu">
@@ -135,8 +142,8 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Page Header
-        <small>Optional description</small>
+        Table Name
+        <small>Table description</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
