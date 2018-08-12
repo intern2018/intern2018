@@ -363,12 +363,10 @@ a:focus {
 @media (max-width: 991px) {
   .navbar-custom-menu .navbar-nav > li {
     float: left;
-    display: inline-block;
   }
   .navbar-custom-menu .navbar-nav {
     margin: 0;
     float: left;
-    display: inline-block;
   }
   .navbar-custom-menu .navbar-nav > li > a {
     padding-top: 15px;
@@ -4941,7 +4939,7 @@ table.text-center th {
  * ----------
  */
 .skin-blue .main-header .navbar {
-  background-color: #fff;
+  background-color: #3c8dbc;
 }
 .skin-blue .main-header .navbar .nav > li > a {
   color: #ffffff;
@@ -20251,11 +20249,5 @@ a.text-dark:focus {
   margin: 0;
   overflow: visible;
   clip: auto;
-}
-
-.navbar-laravel {
-  background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 

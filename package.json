@@ -12,7 +12,6 @@
     "devDependencies": {
         "axios": "^0.18",
         "bootstrap": "^4.0.0",
-<<<<<<< HEAD
         "cross-env": "^5.1",
         "font-awesome": "^4.7.0",
         "jquery": "^3.2",
@@ -23,13 +22,5 @@
     },
     "dependencies": {
         "admin-lte": "^2.4.8"
-=======
-        "popper.js": "^1.12",
-        "cross-env": "^5.1",
-        "jquery": "^3.2",
-        "laravel-mix": "^2.0",
-        "lodash": "^4.17.4",
-        "vue": "^2.5.7"
->>>>>>> 2c14e739fb7ae1190eced564acf95a69900aea8d
     }
 }
