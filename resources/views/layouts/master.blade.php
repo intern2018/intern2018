@@ -31,7 +31,9 @@
       </a>
        <div class="navbar-custom-menu" style="display: inline-block;">
             <ul class="nav navbar-nav">
-              <li class="dropdown user user-menu"><br>
+              <li class="dropdown user user-menu">
+                  
+                    
                 <p class="dropdown-toggle" data-toggle="dropdown">
                   <img height="160px" width="160px" class="user-image" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small">
                      <span class="hidden-xs">
@@ -40,52 +42,46 @@
                         </small>
                      </span>
                 </p>
-              </li>
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-                  <i class="fa fa-gears"></i>
-                </a>
-
                 <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
-
-
-                        <img width="150px" height="150px" class="img-circle" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small img 20170303 180515">
-
-                  </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-
-                    </div>
-                    <div class="col-xs-4 text-center">
-
-                    </div>
-                    <div class="col-xs-4 text-center">
-                    </div>
-                  </li>
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a class="btn btn-default btn-flat" href="/auth/edit">Account Settings</a>
-                      <br>
-
-                    </div>
-                    <div class="pull-right">
-                       <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                         document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </div>
-                  </li>
-
-                </ul>
+                    <!-- User image -->
+                    <li class="user-header">
+  
+  
+                          <img width="150px" height="150px" class="img-circle" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small img 20170303 180515">
+  
+                    </li>
+                    <!-- Menu Body -->
+                    <li class="user-body">
+                      <div class="col-xs-4 text-center">
+  
+                      </div>
+                      <div class="col-xs-4 text-center">
+  
+                      </div>
+                      <div class="col-xs-4 text-center">
+                      </div>
+                    </li>
+                    <!-- Menu Footer-->
+                    <li class="user-footer">
+                      <div class="pull-left">
+                        <a class="btn btn-default btn-flat" href="/auth/edit">Account Settings</a>
+                        <br>
+  
+                      </div>
+                      <div class="pull-right">
+                         <a class="dropdown-item" href="{{ route('logout') }}"
+                             onclick="event.preventDefault();
+                                           document.getElementById('logout-form').submit();">
+                              {{ __('Logout') }}
+                          </a>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                              @csrf
+                          </form>
+                      </div>
+                    </li>
+  
+                  </ul>
+                
               </li>
             </ul>
           </div>
