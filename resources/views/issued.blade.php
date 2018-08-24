@@ -1,4 +1,7 @@
 @extends('layouts.master')
+@section('sidebarmenu')
+
+@endsection
 @section('content')
 <div class="container">
   <div class="row">
