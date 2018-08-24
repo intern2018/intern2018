@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('sidebarmenu')
 
+  @include('sidebarmenu')
 @endsection
 @section('content')
 <div class="container">
