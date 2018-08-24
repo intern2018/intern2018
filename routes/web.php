@@ -28,7 +28,10 @@ Route::get('/form', function () {
 Route::get('/test', function () {
     return view('test');
 });
-Route::get('/userscontrollcard', function () {
-    return view('userscontrollcard');
+Route::get('normaluser/userscontrollcard', function () {
+    return view('normaluser.userscontrollcard');
 });
 
+Route::get('/user', function () {
+    return view('normaluser.user');
+});
