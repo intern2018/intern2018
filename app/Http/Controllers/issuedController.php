@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class issuedController extends Controller
 {
     public function index(){
-        return view('issued');
+        return view('normaluser.issued');
     }
 }

@@ -3,6 +3,7 @@
   @include('normaluser.sidebarmenu')
 @endsection
 @section('content')
+<script src="{{ asset('js/customejs.js') }}"></script>
 <div class="container">
     <div class="row">
       <div class="col-10 offset-1">
@@ -23,8 +24,12 @@
                     </div>
                     <div class="form-group">
                       <label for="serie">ብዛት(Quantity) :</label>
-                      <input type="number" class="form-control" placeholder="Quantity" id="quantity" name="quantity">
+                      <input type="number" class="form-control" placeholder="Quantity" id="quantity" onblur="serial_drop('quantity','sdrop')" name="quantity" >
                     </div>
+                    <div class="col-8 offset-2" id="sdrop">
+
+                    </div>
+
                   </div>
                   
                 </div>

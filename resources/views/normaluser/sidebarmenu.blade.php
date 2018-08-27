@@ -6,12 +6,9 @@
           <i class="fa fa-angle-left pull-right"></i>
         </span>
       </a>
-      <ul class="treeview-menu">
-        <li><a href="{{ url('normaluser/userscontrollcard') }}"><i class="fa fa-circle-o"></i>User Card</a></li>
-        <li><a href="{{ url('issued') }}"><i class="fa fa-circle-o"></i>Issued Resource</a></li>
-      </ul>
     </li>
     <!-- Optionally, you can add icons to the links -->
-    <li class="active"><a href="{{ url('form') }}"><i class="fa fa-link"></i> <span>Insert Product</span></a></li>
-    <li class="active"><a href="{{ url('user') }}"><i class="fa fa-link"></i> <span>user</span></a></li>
+    <li class="active"><a href="{{ url('normaluser/usercard') }}"><i class="fa fa-link"></i> <span>User Card</span></a></li>
+    <li class="active"><a href="{{ url('normaluser/request') }}"><i class="fa fa-link"></i> <span>Request</span></a></li>
+    <li class="active"><a href="{{ url('normaluser/transfer') }}"><i class="fa fa-link"></i> <span>Transfer</span></a></li>
 </ul>
