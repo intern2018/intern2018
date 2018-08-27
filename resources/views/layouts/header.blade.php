@@ -10,26 +10,20 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <!-- Fonts -->
-  <!--  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
-   <!-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
-
-    <!-- Styles -->
+   <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
     <div>
-        <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
-          <header class="main-header">
+        <nav class="navbar navbar-expand-md navbar-light navbar-laravel" style="background-color: white;">
+          <header class="main-header" id="app">
             <!-- Logo -->
             <a href="#" class="logo" style="border-right: 0px;height:100px;width:100%;text-align: left;border-bottom: 1px inset #F9FAFC;">
               <!-- mini logo for sidebar mini 50x50 pixels -->
               <span class="logo-mini">Adama Science and Technology University</span>
               <!-- logo for regular state and mobile devices -->
-              <span class="a"><img height="80px" src="{{asset('images/adm.png')}}" alt="Astu icon">
+              <span class="a"><img height="80px" width="100%" src="{{asset('images/loginLogo.png')}}" alt="Astu icon">
              </span>
-
             </a>
 
          </header>
@@ -53,6 +47,7 @@
     <!-- Default to the left -->
          <strong>Copyright &copy; 2018 <a href="#">K97H</a>.</strong> All rights reserved.
       </footer>
+         <!-- Scripts -->
        <script src="{{ asset('js/app.js') }}" defer></script>
 </body>
 </html>

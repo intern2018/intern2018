@@ -46,53 +46,48 @@
                         </small>
                      </span>
                      @endif
-                </p>
-              </li>
-              <li class="dropdown user user-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-
-                  <i class="fa fa-gears"></i>
-                </a>
+                     <i class="fa fa-gears"></i>
 
                 <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
+                <!-- User image -->
+                <li class="user-header">
 
 
-                        <img width="150px" height="150px" class="img-circle" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small img 20170303 180515">
+                      <img width="150px" height="150px" class="img-circle" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small img 20170303 180515">
 
-                  </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
+                </li>
+                <!-- Menu Body -->
+                <li class="user-body">
+                  <div class="col-xs-4 text-center">
 
-                    </div>
-                    <div class="col-xs-4 text-center">
+                  </div>
+                  <div class="col-xs-4 text-center">
 
-                    </div>
-                    <div class="col-xs-4 text-center">
-                    </div>
-                  </li>
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a class="btn btn-default btn-flat" href="/auth/edit">Account Settings</a>
-                      <br>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                  </div>
+                </li>
+                <!-- Menu Footer-->
+                <li class="user-footer">
+                  <div class="pull-left">
+                    <a class="btn btn-default btn-flat" href="/auth/edit">Account Settings</a>
+                    <br>
 
-                    </div>
-                    <div class="pull-right">
-                       <a class="dropdown-item" href="{{ route('logout') }}"
-                           onclick="event.preventDefault();
-                                         document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }}
-                        </a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                            @csrf
-                        </form>
-                    </div>
-                  </li>
+                  </div>
+                  <div class="pull-right">
+                     <a class="dropdown-item" href="{{ route('logout') }}"
+                         onclick="event.preventDefault();
+                                       document.getElementById('logout-form').submit();">
+                          {{ __('Logout') }}
 
+                      </a>
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          @csrf
+                      </form>
+                  </div>
+                </li>
                 </ul>
+                </p>
               </li>
             </ul>
           </div>
@@ -102,19 +97,7 @@
   <aside class="main-sidebar">
 
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-
-      <!-- Sidebar user panel (optional) -->
-      <div class="user-panel">
-        
-      </div>
-
-      <div class="user-panel">
-        
-      </div>
-      <div class="user-panel">
-        
-      </div>
+    <section class="sidebar mt-5">
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="treeview menu-open">

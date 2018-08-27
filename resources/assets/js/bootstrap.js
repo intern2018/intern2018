@@ -15,6 +15,7 @@ try {
 } catch (e) {}
 
 require('admin-lte');
+require('@fortawesome/fontawesome-free');
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests
