@@ -35,3 +35,8 @@ Route::get('normaluser/userscontrollcard', function () {
 Route::get('/user', function () {
     return view('normaluser.user');
 });
+
+Route::get('/items', 'ItemsController@index');
+Route::get('/insertItem', 'ItemsController@insertItem');
+Route::post('/ItemsController@registerItem','ItemsController@registerItem');
+

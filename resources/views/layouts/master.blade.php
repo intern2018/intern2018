@@ -59,7 +59,8 @@
     <section class="content container-fluid">
 
       <main class="py-4">
-            @yield('content')
+          @include('inc.messages')
+          @yield('content')
       </main>
 
     </section>
