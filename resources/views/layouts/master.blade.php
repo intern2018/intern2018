@@ -46,47 +46,40 @@
                         </small>
                      </span>
                      @endif
-                     <i class="fa fa-gears"></i>
+                     <a href="#" data-toggle="dropdown">
+                     <ul class="dropdown-menu">
+                      <!-- User image -->
+                        <li class="user-header">
+                        <img width="150px" height="150px" class="img-circle" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small img 20170303 180515">
+                        </li>
+                      <!-- Menu Body -->
+                         <li class="user-body">
+                            <div class="col-xs-4 text-center">
+                            </div>
+                            <div class="col-xs-4 text-center">
+                            </div>
+                            <div class="col-xs-4 text-center">
+                            </div>
+                         </li>
+                          <!-- Menu Footer-->
+                          <li class="user-footer">
+                            <div class="pull-left">
+                              <a class="btn btn-default btn-flat" href="/auth/edit">Account Settings</a>
+                              <br>
 
-                <ul class="dropdown-menu">
-                <!-- User image -->
-                <li class="user-header">
-
-
-                      <img width="150px" height="150px" class="img-circle" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small img 20170303 180515">
-
-                </li>
-                <!-- Menu Body -->
-                <li class="user-body">
-                  <div class="col-xs-4 text-center">
-
-                  </div>
-                  <div class="col-xs-4 text-center">
-
-                  </div>
-                  <div class="col-xs-4 text-center">
-                  </div>
-                </li>
-                <!-- Menu Footer-->
-                <li class="user-footer">
-                  <div class="pull-left">
-                    <a class="btn btn-default btn-flat" href="/auth/edit">Account Settings</a>
-                    <br>
-
-                  </div>
-                  <div class="pull-right">
-                     <a class="dropdown-item" href="{{ route('logout') }}"
-                         onclick="event.preventDefault();
-                                       document.getElementById('logout-form').submit();">
-                          {{ __('Logout') }}
-
-                      </a>
-                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                          @csrf
-                      </form>
-                  </div>
-                </li>
-                </ul>
+                            </div>
+                            <div class="pull-right">
+                              <a class="dropdown-item" href="{{ route('logout') }}"
+                                  onclick="event.preventDefault();
+                                                document.getElementById('logout-form').submit();">
+                                    {{ __('Logout') }}
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </div>
+                          </li>
+                     </ul>
                 </p>
               </li>
             </ul>
@@ -95,9 +88,9 @@
   </header>
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
-
     <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar mt-5">
+    <section class="sidebar mt-5" >
+  
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
         <li class="treeview menu-open">
@@ -108,7 +101,7 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="{{ url('userscontrollcard') }}"><i class="fa fa-circle-o"></i>User Card</a></li>
+            <li><a href="{{ url('normaluser/usercard') }}"><i class="fa fa-circle-o"></i>User Card</a></li>
             <li><a href="{{ url('issued') }}"><i class="fa fa-circle-o"></i>Issued Resource</a></li>
           </ul>
         </li>
@@ -128,10 +121,6 @@
         Table Name
         <small>Table description</small>
       </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
-        <li class="active">Here</li>
-      </ol>
     </section>
 
     <!-- Main content -->
@@ -153,7 +142,7 @@
      version 1.0
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2018 <a href="#">K97H</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="#">K97H</a>.</strong> All rights reserved.
   </footer>
 </div>
 

@@ -39,13 +39,14 @@
           -o-transition: -o-transform 0.3s ease-in-out, margin 0.3s ease-in-out;
           transition: transform 0.3s ease-in-out, margin 0.3s ease-in-out;
           margin-left: 0px;
-          z-index: 820;border-left: 0px; position: fixed; width: 100%; height: 5%; bottom: 0px; ">
+          z-index: 820;border-left: 0px; position: fixed; width: 100%; height: 7%; bottom: 0px; ">
     <!-- To the right -->
         <div class="pull-right hidden-xs">
           version 1.0
         </div>
     <!-- Default to the left -->
-         <strong>Copyright &copy; 2018 <a href="#">K97H</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> <a href="#">K97H</a>.</strong> All rights reserved.
+  
       </footer>
          <!-- Scripts -->
        <script src="{{ asset('js/app.js') }}" defer></script>
