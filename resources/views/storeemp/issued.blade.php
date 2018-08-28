@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('sidebarmenu')
-
-  @include('sidebarmenu')
+  @include('storeemp.sidebarmenu')
 @endsection
 @section('content')
 <div class="container">

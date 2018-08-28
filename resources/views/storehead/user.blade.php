@@ -3,7 +3,7 @@
   @include('normaluser.sidebarmenu')
 @endsection
 @section('header')
-    <h1>Immediate head</h1>
+    <h1>store head</h1>
 @endsection
 @section('content')
 

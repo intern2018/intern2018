@@ -6,10 +6,8 @@
           <i class="fa fa-angle-left pull-right"></i>
         </span>
       </a>
-      <ul class="treeview-menu">
-        <li><a href="{{ url('') }}"><i class="fa fa-circle-o"></i>View Items</a></li>
-      </ul>
     </li>
     
     <li class="active"><a href="{{ url('/insertItem') }}"><i class="fa fa-link"></i> <span>Insert Item</span></a></li>
+    <li class="active"><a href="{{ url('/issued') }}"><i class="fa fa-link"></i> <span>Issue Items</span></a></li>
 </ul>
