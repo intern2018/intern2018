@@ -13,4 +13,5 @@
     <li class="active"><a href="{{ url('/insertItemView') }}"><i class="fa fa-link"></i> <span>Insert Item</span></a></li>
     <li class="active"><a href="#"><i class="fa fa-link"></i> <span>View Item</span></a></li>
     <li class="active"><a href="#"><i class="fa fa-link"></i> <span>View Provider</span></a></li>
+    <li class="active"><a href="{{ url('/issued') }}"><i class="fa fa-link"></i> <span>Issue Items</span></a></li>
 </ul>

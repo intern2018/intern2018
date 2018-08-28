@@ -38,16 +38,20 @@ Route::get('normaluser/request', function () {
 Route::get('normaluser/transfer', function () {
     return view('normaluser.transfer');
 });
-/*end normaluser*/
-Route::get('normaluser/userscontrollcard', function () {
-    return view('normaluser.userscontrollcard');
-});
-
 Route::get('/user', function () {
     return view('normaluser.user');
 });
+/*end normaluser*/
 
+/*store user*/
+Route::get('/suser', function () {
+    return view('storeemp.user');
+});
+Route::get('/issued', function () {
+    return view('storeemp.issued');
+});
 Route::get('/items', 'ItemsController@index');
+<<<<<<< HEAD
 Route::get('/registerItem', 'ItemsController@registerItem');
 Route::post('/ItemsController@register','ItemsController@register');
 
@@ -57,3 +61,20 @@ Route::get('/provider', 'ItemsController@provider');
 
 Route::get('/insertItemView', 'ItemsController@insertItemView');
 Route::post('/ItemsController@insertItem', 'ItemsController@insertItem');
+=======
+Route::get('/insertItem', 'ItemsController@insertItem');
+Route::post('/ItemsController@registerItem','ItemsController@registerItem');
+/*end store user*/
+
+/* immediate head user*/
+Route::get('/iuser', function () {
+    return view('immediatehead.user');
+});
+/*end immediate head user*/
+
+/* immediate head user*/
+Route::get('/shuser', function () {
+    return view('storehead.user');
+});
+/*end immediate head user*/
+>>>>>>> def8ea3337fd20616abdae60a22dd6b00c7e9df7
