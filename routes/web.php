@@ -51,7 +51,6 @@ Route::get('/issued', function () {
     return view('storeemp.issued');
 });
 Route::get('/items', 'ItemsController@index');
-<<<<<<< HEAD
 Route::get('/registerItem', 'ItemsController@registerItem');
 Route::post('/ItemsController@register','ItemsController@register');
 
@@ -61,20 +60,3 @@ Route::get('/provider', 'ItemsController@provider');
 
 Route::get('/insertItemView', 'ItemsController@insertItemView');
 Route::post('/ItemsController@insertItem', 'ItemsController@insertItem');
-=======
-Route::get('/insertItem', 'ItemsController@insertItem');
-Route::post('/ItemsController@registerItem','ItemsController@registerItem');
-/*end store user*/
-
-/* immediate head user*/
-Route::get('/iuser', function () {
-    return view('immediatehead.user');
-});
-/*end immediate head user*/
-
-/* immediate head user*/
-Route::get('/shuser', function () {
-    return view('storehead.user');
-});
-/*end immediate head user*/
->>>>>>> def8ea3337fd20616abdae60a22dd6b00c7e9df7
