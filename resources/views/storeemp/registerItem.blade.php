@@ -8,9 +8,9 @@
       <div class="col-10 offset-1">
         <div class="card">
             <div class="card-body text-left">
-              <h5 class="card-header">Item Inserting Form</h5>
+              <h5 class="card-header">Item Register Form</h5>
               <div class="card-body">
-                <form method="post" action="{{action('ItemsController@registerItem')}}">
+                <form method="post" action="{{action('ItemsController@register')}}">
                 <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                   <div class="row">
                     <div class="col-9">
@@ -18,10 +18,10 @@
                         <label >የእቃው ስም(Item Name) :</label>
                         <input type="text" class="form-control" placeholder="Item Name" id="itemName" name="itemName">
                       </div>
-                      <div class="form-group">
+                      {{-- <div class="form-group">
                           <label >ብዛት(Quantity) :</label>
                           <input type="number" class="form-control" placeholder="Quantity" id="itemQuantity" name="itemQuantity">
-                      </div>
+                      </div> --}}
                       <div class="form-group">
                         <label for="serie">የእቃው አይነት(Item Type) :</label>
                         <input type="text" class="form-control" placeholder="Item Type" id="itemType" name="itemType">

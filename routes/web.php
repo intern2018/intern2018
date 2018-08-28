@@ -48,6 +48,12 @@ Route::get('/user', function () {
 });
 
 Route::get('/items', 'ItemsController@index');
-Route::get('/insertItem', 'ItemsController@insertItem');
-Route::post('/ItemsController@registerItem','ItemsController@registerItem');
+Route::get('/registerItem', 'ItemsController@registerItem');
+Route::post('/ItemsController@register','ItemsController@register');
 
+Route::get('/registerProviderView', 'ItemsController@registerProviderView');
+Route::post('/ItemsController@registerProvider', 'ItemsController@registerProvider');
+Route::get('/provider', 'ItemsController@provider');
+
+Route::get('/insertItemView', 'ItemsController@insertItemView');
+Route::post('/ItemsController@insertItem', 'ItemsController@insertItem');
