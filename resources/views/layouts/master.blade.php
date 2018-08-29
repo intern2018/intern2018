@@ -38,10 +38,16 @@
               <p class="dropdown-toggle" data-toggle="dropdown">
                 <img height="160px" width="160px" class="user-image" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small">
                    <span class="hidden-xs">
+                   @guest()
                     <small>
                           Welcome User
                       </small>
+                      @endguest
+                      <small>
+                      Welcome  {{  auth()->user()->name }} 
+                      </small>
                    </span>
+                  
               </p>
               <ul class="dropdown-menu">
                   <!-- User image -->
@@ -94,22 +100,7 @@
     <section class="sidebar mt-5" >
   
       <!-- Sidebar Menu -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li class="treeview menu-open">
-          <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li><a href="{{ url('normaluser/usercard') }}"><i class="fa fa-circle-o"></i>User Card</a></li>
-            <li><a href="{{ url('issued') }}"><i class="fa fa-circle-o"></i>Issued Resource</a></li>
-          </ul>
-        </li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="{{ url('form') }}"><i class="fa fa-link"></i> <span>Insert Product</span></a></li>
-      </ul>
+      @yield('sidebarmenu')
       <!-- /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->

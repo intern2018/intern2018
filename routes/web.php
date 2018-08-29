@@ -18,45 +18,61 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/issued', 'issuedController@index');
-Route::get('/other-page', function () {
-    return view('welcome');
-});
-Route::get('/form', function () {
-    return view('form');
-});
-Route::get('/test', function () {
-    return view('test');
-});
-/*normaluser*/
-Route::get('normaluser/usercard', function () {
-    return view('normaluser.userscontrollcard');
-});
-Route::get('normaluser/request', function () {
-    return view('normaluser.request');
-});
-Route::get('normaluser/transfer', function () {
-    return view('normaluser.transfer');
-});
-Route::get('/user', function () {
-    return view('normaluser.user');
-});
-/*end normaluser*/
 
-/*store user*/
-Route::get('/suser', function () {
-    return view('storeemp.user');
+Route::group(['middleware' => ['auth', 'user']], function() {
+    // put all your admin routes here
+    Route::get('normaluser/usercard', function () {
+        return view('normaluser.userscontrollcard');
+    });
+    Route::get('normaluser/request', function () {
+        return view('normaluser.request');
+    });
+    Route::get('normaluser/transfer', function () {
+        return view('normaluser.transfer');
+    });
+    Route::get('/user', function () {
+        return view('normaluser.user');
+    });
 });
-Route::get('/issued', function () {
-    return view('storeemp.issued');
+
+Route::group(['middleware' => ['auth', 'semployee']], function() {
+
+    Route::get('/suser', function () {
+        return view('storeemp.user');
+    });
+    Route::get('/issued', function () {
+        return view('storeemp.issued');
+    });
+    Route::get('/items', 'ItemsController@index');
+    Route::get('/registerItem', 'ItemsController@registerItem');
+    Route::post('/ItemsController@register','ItemsController@register');
+    
+    Route::get('/registerProviderView', 'ItemsController@registerProviderView');
+    Route::post('/ItemsController@registerProvider', 'ItemsController@registerProvider');
+    Route::get('/provider', 'ItemsController@provider');
+    
+    Route::get('/insertItemView', 'ItemsController@insertItemView');
+    Route::post('/ItemsController@insertItem', 'ItemsController@insertItem');
 });
-Route::get('/items', 'ItemsController@index');
-Route::get('/registerItem', 'ItemsController@registerItem');
-Route::post('/ItemsController@register','ItemsController@register');
 
-Route::get('/registerProviderView', 'ItemsController@registerProviderView');
-Route::post('/ItemsController@registerProvider', 'ItemsController@registerProvider');
-Route::get('/provider', 'ItemsController@provider');
+//->middleware('auth');
+Route::middleware(['auth'])->group(function(){
+    Route::get('/issued', 'issuedController@index');
+    Route::get('/other-page', function () {
+        return view('welcome');
+    });
+    Route::get('/form', function () {
+        return view('form');
+    });
+    Route::get('/test', function () {
+        return view('test');
+    });
+    /*normaluser*/
+    
+    /*end normaluser*/
+    
+    /*store user*/
+    
+    
 
-Route::get('/insertItemView', 'ItemsController@insertItemView');
-Route::post('/ItemsController@insertItem', 'ItemsController@insertItem');
+});
