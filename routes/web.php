@@ -51,7 +51,7 @@ Route::group(['middleware' => ['auth', 'semployee']], function() {
     Route::post('/ItemsController@registerProvider', 'ItemsController@registerProvider');
     Route::get('/provider', 'ItemsController@provider');
     
-    Route::get('/insertItemView', 'ItemsController@insertItemView');
+    Route::get('/insertItemView', 'StoreempController@Index');
     Route::post('/ItemsController@insertItem', 'ItemsController@insertItem');
 });
 

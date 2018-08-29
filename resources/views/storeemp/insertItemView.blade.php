@@ -17,14 +17,24 @@
                       <div class="form-group">
                         <label >የእቃዉ ስም(Item Name) :</label><br>
                         <!--input type="text" class="form-control" placeholder="Item Name" id="itemName" name="itemName"-->
-                        <select class="form-control" name="itemName" id="itemName" data-style="select-with-transition" data-size="7">
-                          <option value=""></option>
+                        <select class="form-control" name="itemName" id="itemName">
+                          <option value="">--Item Name--</option>
                           @foreach ($items as $item)
-                        <option role="menuitem" value="{{$item->itemId}}">{{$item->itemName}}</option>
+                            <option value="{{$item->itemId}}">{{$item->itemName}}</option>
                           @endforeach
                           
                         </select>
 
+                      </div>
+                      <div class="form-group">
+                        <label >የአቅራቢ ስም(Provider Name) :</label>
+                        <select class="form-control" name="providerName" id="providerName">
+                            <option value="">--Provider Name--</option>
+                            @foreach ($provider as $pro)
+                              <option value="{{$pro->providerId}}">{{$pro->providerName}}</option>
+                            @endforeach
+                            
+                          </select>
                       </div>
                       <div class="form-group">
                         <label >ብዛት(Quantity) :</label>
@@ -48,9 +58,4 @@
       </div>
     </div>
   </div>
-  <script>
-    $(function() {
-      $('#itemName').dropselect();
-    })
-  </script>
 @endsection

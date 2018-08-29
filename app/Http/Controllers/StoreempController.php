@@ -13,6 +13,11 @@ class StoreempController extends Controller
     public function index()
     { 
         $items=Item::all();
-        return view('storeemp/insertItemView')->with('items',$items);
+        $provider=Provider::all();
+        $data=array(
+            'items'=> $items ,
+            'provider'=> $provider
+        );
+        return view('storeemp/insertItemView')->with($data);
     }
 }

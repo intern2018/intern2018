@@ -9,7 +9,7 @@
   
 
    <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
-   <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-dropselect.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrapselect.css') }}">
 </head>
 
 <body class="hold-transition sidebar-mini skin-black-light">
@@ -138,7 +138,11 @@
 </div>
 
 <script src="{{ asset('js/app.js') }}"></script>
-<script src="{{ asset('js/bootstrap-dropselect.js') }}"></script>
-
+<script src="{{ asset('js/jquery.js') }}"></script>
+<script src="{{ asset('js/bootstrapselect.js') }}"></script>
+<script type="text/javascript">
+  $("#itemName").select2();
+  $("#providerName").select2();
+</script>
 </body>
 </html>
