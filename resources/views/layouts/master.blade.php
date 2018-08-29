@@ -38,10 +38,16 @@
               <p class="dropdown-toggle" data-toggle="dropdown">
                 <img height="160px" width="160px" class="user-image" src="{{ asset('images/user4-128x128.jpg')}}" alt="Small">
                    <span class="hidden-xs">
+                   @guest()
                     <small>
                           Welcome User
                       </small>
+                      @endguest
+                      <small>
+                      Welcome  {{  auth()->user()->name }} 
+                      </small>
                    </span>
+                  
               </p>
               <ul class="dropdown-menu">
                   <!-- User image -->

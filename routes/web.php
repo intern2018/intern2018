@@ -19,19 +19,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::middleware(['auth'])->group(function(){
-
-    Route::get('/issued', 'issuedController@index');
-    Route::get('/other-page', function () {
-        return view('welcome');
-    });
-    Route::get('/form', function () {
-        return view('form');
-    });
-    Route::get('/test', function () {
-        return view('test');
-    });
-    /*normaluser*/
+Route::group(['middleware' => ['auth', 'user']], function() {
+    // put all your admin routes here
     Route::get('normaluser/usercard', function () {
         return view('normaluser.userscontrollcard');
     });
@@ -44,9 +33,10 @@ Route::middleware(['auth'])->group(function(){
     Route::get('/user', function () {
         return view('normaluser.user');
     });
-    /*end normaluser*/
-    
-    /*store user*/
+});
+
+Route::group(['middleware' => ['auth', 'semployee']], function() {
+
     Route::get('/suser', function () {
         return view('storeemp.user');
     });
@@ -61,7 +51,28 @@ Route::middleware(['auth'])->group(function(){
     Route::post('/ItemsController@registerProvider', 'ItemsController@registerProvider');
     Route::get('/provider', 'ItemsController@provider');
     
-    Route::get('/insertItemView', 'StoreempController@Index');
+    Route::get('/insertItemView', 'ItemsController@insertItemView');
     Route::post('/ItemsController@insertItem', 'ItemsController@insertItem');
+});
+
+//->middleware('auth');
+Route::middleware(['auth'])->group(function(){
+    Route::get('/issued', 'issuedController@index');
+    Route::get('/other-page', function () {
+        return view('welcome');
+    });
+    Route::get('/form', function () {
+        return view('form');
+    });
+    Route::get('/test', function () {
+        return view('test');
+    });
+    /*normaluser*/
     
+    /*end normaluser*/
+    
+    /*store user*/
+    
+    
+
 });
