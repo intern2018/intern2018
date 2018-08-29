@@ -3,7 +3,7 @@
     @include('storeemp.sidebarmenu')
 @endsection
 @section('content')
-<div class="container">
+<div class="container" onload="dropitem()">
     <div class="row">
       <div class="col-10 offset-1">
         <div class="card">
@@ -14,6 +14,18 @@
                 <input name="_token" type="hidden" value="{{ csrf_token() }}"/>
                   <div class="row">
                     <div class="col-9">
+                      <div class="form-group">
+                        <label >የእቃዉ ስም(Item Name) :</label><br>
+                        <!--input type="text" class="form-control" placeholder="Item Name" id="itemName" name="itemName"-->
+                        <select class="form-control" name="itemName" id="itemName" data-style="select-with-transition" data-size="7">
+                          <option value=""></option>
+                          @foreach ($items as $item)
+                        <option role="menuitem" value="{{$item->itemId}}">{{$item->itemName}}</option>
+                          @endforeach
+                          
+                        </select>
+
+                      </div>
                       <div class="form-group">
                         <label >ብዛት(Quantity) :</label>
                         <input type="number" class="form-control" placeholder="Quantity" id="quantity" name="quantity">
@@ -36,4 +48,9 @@
       </div>
     </div>
   </div>
+  <script>
+    $(function() {
+      $('#itemName').dropselect();
+    })
+  </script>
 @endsection

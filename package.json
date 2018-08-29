@@ -15,13 +15,14 @@
         "cross-env": "^5.1",
         "font-awesome": "^4.7.0",
         "jquery": "^3.2",
-        "laravel-mix": "^2.0",
+        "laravel-mix": "^2.1.14",
         "lodash": "^4.17.4",
         "popper.js": "^1.12",
         "vue": "^2.5.7"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.2.0",
-        "admin-lte": "^2.4.8"
+        "admin-lte": "^2.4.8",
+        "bootstrap-dropselect": "^1.1.4"
     }
 }

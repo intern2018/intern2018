@@ -8,3 +8,7 @@ function serial_drop(x,y){
         "<input type='text' class='form-control' placeholder='serial' id='"+a+"' name="+a+"><br>";
     }
 }
+
+function dropitem(){
+
+}

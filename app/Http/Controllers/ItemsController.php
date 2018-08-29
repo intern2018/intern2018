@@ -71,6 +71,7 @@ class ItemsController extends Controller
     public function insertItem(Request $request)
     {
         $this->validate($request, [
+            'itemName' => 'required',
             'quantity' => 'required',
             'unitPrice' => 'required',
             'referenceNo' => 'required',

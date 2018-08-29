@@ -9,11 +9,15 @@
       <div class="col-10 offset-1">
         <div class="card">
             <div class="card-body text-left">
-              <h5 class="card-header">request form</h5>
+              <h5 class="card-header">transfer form</h5>
               <div class="card-body">
                 <form action="#">
                 <div class="row">
                   <div class="col-9">
+                    <div class="form-group">
+                      <label for="property">የተቀባይ ስም(Transfere To) :</label>
+                      <input type="text" class="form-control" placeholder="Name" id="transferto" name="transferto">
+                    </div>
                     <div class="form-group">
                       <label for="property">የእቃው አይነት(Item type) :</label>
                       <input type="text" class="form-control" placeholder="Item type" id="itemtype" name="itemtype">
