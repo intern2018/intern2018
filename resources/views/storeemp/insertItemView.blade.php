@@ -1,7 +1,9 @@
 @extends('layouts.master')
+
 @section('sidebarmenu')
     @include('storeemp.sidebarmenu')
 @endsection
+
 @section('content')
 <div class="container" onload="dropitem()">
     <div class="row">

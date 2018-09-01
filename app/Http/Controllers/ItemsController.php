@@ -72,18 +72,27 @@ class ItemsController extends Controller
     {
         $this->validate($request, [
             'itemName' => 'required',
+            'providerName' => 'required',
             'quantity' => 'required',
             'unitPrice' => 'required',
             'referenceNo' => 'required',
         ]);
 
         //insert to DB
-        // $provider = new Provider;
-        // $provider->providerName = $request->input('providerName');
-        // $provider->address = $request->input('address');
-        // $provider->phoneNo = $request->input('phone');
-        // $provider->email = $request->input('email');
-        // $provider->save();
+        $item =DB::table('items')->where('itemId',$request->input('itemName'))->first();
+        $item->itemQuantity += $request->input('quantity');
+        DB::table('items')->where('itemId',$request->input('itemName'))->update(['itemQuantity'=>$item->itemQuantity]);
+
+        $purchase =new Purchase;
+        $purchase->providerId=$request->input('providerName');
+        $purchase->itemId=$request->input('itemName');
+        $purchase->userId=auth()->user()->id;
+        $purchase->unitPrice=$request->input('unitPrice');
+        $purchase->unit=$item->itemUnit;
+        $purchase->quantity = $request->input('quantity');
+        $purchase->referenceNo = $request->input('referenceNo');
+        $purchase->save();
+
         return redirect('/insertItemView')->with('success', 'ITEM INSERTED');
     }
 

@@ -24,15 +24,14 @@ Route::group(['middleware' => ['auth', 'user']], function() {
     Route::get('normaluser/usercard', function () {
         return view('normaluser.userscontrollcard');
     });
-    Route::get('normaluser/request', function () {
-        return view('normaluser.request');
-    });
+    Route::get('normaluser/request','normaluserController@request');
     Route::get('normaluser/transfer', function () {
         return view('normaluser.transfer');
     });
     Route::get('/user', function () {
         return view('normaluser.user');
     });
+    Route::post('/normaluserController@requeststore','normaluserController@requeststore');
 });
 
 Route::group(['middleware' => ['auth', 'semployee']], function() {
